@@ -9,6 +9,9 @@
             <h1>
                     <%= title %>
                 </h1>
+                <% if(items.length ==0 ) { %>
+                    <h5>Add Items here</h5>
+                    <% } %>
                 <ul>
                     <% for(var i=0;i<items.length;i++) { %>
                         <li>                               

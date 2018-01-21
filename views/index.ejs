@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <title>Express App</title>
+</head>
+
+<body>
+    <div class="container">
+            <h1>
+                    <%= title %>
+                </h1>
+                <ul>
+                    <% for(var i=0;i<items.length;i++) { %>
+                        <li>                               
+                                <b><i>
+                                        <%=items[i].desc %>
+                                </i></b>  
+                               
+                        </li>
+                        <% } %>
+                </ul>
+                <form action="/add" method="post">
+                    <input type="text" name="newitem" />
+                    <input type="submit" value="Add" />
+                </form>
+            
+    </div>
+    
+</body>
+
+</html>
